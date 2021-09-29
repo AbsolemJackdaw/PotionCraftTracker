@@ -12,3 +12,6 @@ launched in.
 
 the zip comes with a batch file to run the jar. simply unzip contents in a folder and run the batch file called
 tracker.bat
+
+Download from the release tabs on the git
+https://github.com/ArtixAllMighty/PotionCraftTracker/releases/tag/v1.0.0.0
