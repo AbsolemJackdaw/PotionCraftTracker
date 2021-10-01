@@ -20,7 +20,7 @@ public class CommandFix extends Command {
         if (!potions.isEmpty() && PotionTracker.tracker.containsKey(potions)) {
             int total = PotionTracker.tracker.get(potions);
             PotionTracker.tracker.put(potions, --total);
-            System.out.format("succesfully removed 1 counter for %s", potions.stream().map(Enum::name).collect(Collectors.joining()));
+            System.out.format("Successfully removed 1 counter for %s", potions.stream().map(Enum::name).collect(Collectors.joining()));
         }
     }
 }

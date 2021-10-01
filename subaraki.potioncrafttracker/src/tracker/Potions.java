@@ -32,7 +32,7 @@ public enum Potions {
     public static List<Potions> getPotionsFromString(String names) {
         return Arrays.stream(Potions.values())
                 .distinct()
-                .filter(potion -> Arrays.stream(names.split(" ")).anyMatch(name -> potion.name().startsWith(name)))
+                .filter(potion -> Arrays.stream(names.split(" ")).anyMatch(name -> potion.name().toLowerCase().startsWith(name)))
                 .collect(Collectors.toList());
     }
 }

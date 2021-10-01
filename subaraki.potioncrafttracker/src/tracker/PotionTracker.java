@@ -25,7 +25,7 @@ public class PotionTracker {
         PotionLogger.LOG.info(" - potions matching any part of typed string will be used to identify potion.");
         PotionLogger.LOG.info("     'li' will be recognized for both light and libido.");
         PotionLogger.LOG.info("     'hallu' will be recognized for Hallucinations");
-        PotionLogger.LOG.info("/fix [potion] > substract one from said stored potion.");
+        PotionLogger.LOG.info("/fix [potion] > subtract one from said stored potion.");
         PotionLogger.LOG.info("/remove [potion] > removes entry for a potion");
         PotionLogger.LOG.info("/save [filename] > save progress from tracker to file");
         PotionLogger.LOG.info("/load [filename] > load progress from file to tracker");

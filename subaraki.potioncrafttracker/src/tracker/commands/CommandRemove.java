@@ -4,7 +4,6 @@ import tracker.Potions;
 import tracker.PotionLogger;
 import tracker.PotionTracker;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CommandRemove extends Command {
