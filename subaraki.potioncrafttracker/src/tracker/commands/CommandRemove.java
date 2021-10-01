@@ -5,6 +5,7 @@ import tracker.PotionLogger;
 import tracker.PotionTracker;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CommandRemove extends Command {
     public CommandRemove() {
@@ -17,7 +18,7 @@ public class CommandRemove extends Command {
             PotionLogger.LOG.info("no arguments found. please give up what potion to remove");
             return;
         }
-        ArrayList<Potions> potions = Potions.getPotionsFromString(getArgument());
+        List<Potions> potions = Potions.getPotionsFromString(getArgument());
         if (!potions.isEmpty()) {
             PotionTracker.tracker.remove(potions); //removes if present
         }

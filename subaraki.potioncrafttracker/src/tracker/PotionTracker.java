@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class PotionTracker {
 
     private static boolean runProgram = true;
-    public static HashMap<ArrayList<Potions>, Integer> tracker = new HashMap<>();
+    public static Map<List<Potions>, Integer> tracker = new HashMap<>();
     public static Scanner scan = new Scanner(System.in);
 
     public void start() {
@@ -47,7 +47,7 @@ public class PotionTracker {
                 }
             } else {
                 if (!entered.isEmpty()) {
-                    ArrayList<Potions> potion = Potions.getPotionsFromString(entered);
+                    List<Potions> potion = Potions.getPotionsFromString(entered);
                     if (potion.isEmpty()) {
                         PotionLogger.LOG.warning("Could not find any potions in " + entered + ". Didn't add anything");
                     } else {
@@ -57,7 +57,7 @@ public class PotionTracker {
                         } else {
                             tracker.put(potion, 1);
                         }
-                        System.out.format("succesfully added 1 %s", potion.stream().map(Enum::name).collect(Collectors.joining("_")));
+                        System.out.format("successfully added 1 %s", potion.stream().map(Enum::name).collect(Collectors.joining("_")));
                     }
                 }
             }
